@@ -1,0 +1,8 @@
+doctl serverless deploy .
+doctl serverless undeploy smartcard/graphql-server
+
+log:
+doctl serverless activations logs --limit 3
+
+invoke:
+doctl serverless functions invoke sample/hello

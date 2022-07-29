@@ -1,0 +1,21 @@
+{
+  "name": "sample-functions-apollo-graphql",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "apollo-server-core": "^3.6.7",
+    "apollo-server-env": "^4.2.1",
+    "apollo-server-plugin-base": "^3.5.2",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.25",
+    "typescript": "^4.6.3"
+  }
+}

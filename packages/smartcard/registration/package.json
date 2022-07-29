@@ -1,0 +1,16 @@
+{
+  "name": "registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ory/cli": "^0.1.35",
+    "@ory/client": "0.0.1-alpha.189"
+  }
+}
