@@ -48,6 +48,7 @@ const resolvers = {
             // console.log(args1, args2, args3);
             const userId = args.ory_id;
             console.log(userId);
+            console.log(ORY_URL)
 
             const userInfo = await getUserInfoOry(userId);
 
