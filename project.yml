@@ -2,14 +2,15 @@ targetNamespace: ''
 parameters: {}
 packages:
   - name: smartcard
-    environment:
-      ORY_SDK_URL: https://auth-admin.smartcardnp.vn
-      ORY_ACCESS_TOKEN: ory_pat_yiC8I7sIkkdsaDo8AiHU3KAu1jkAAzZL
+    # environment:
+    #   HASURA_ENDPOINT: https://hasura.smartcardnp.vn/v1/graphql
+    #   ORY_SDK_URL: https://auth-admin.smartcardnp.vn
+    #   ORY_ACCESS_TOKEN: ory_pat_yiC8I7sIkkdsaDo8AiHU3KAu1jkAAzZL
 
-      SPACE_URL: https://sgp1.digitaloceanspaces.com
-      SPACE_REGION: sgp1
-      ACCESS_KEY_ID: OZMG7XXNT64EPKWZYSVM
-      SECRET_ACCESS_KEY: 2EixS2Z731G/YnJLVOZ4xi7rxmRRt+mHMzqdyozilyk
+    #   SPACE_URL: https://sgp1.digitaloceanspaces.com
+    #   SPACE_REGION: sgp1
+    #   ACCESS_KEY_ID: OZMG7XXNT64EPKWZYSVM
+    #   SECRET_ACCESS_KEY: 2EixS2Z731G/YnJLVOZ4xi7rxmRRt+mHMzqdyozilyk
 
     parameters: {}
     annotations: {}

@@ -7,10 +7,11 @@ const {
     ROOT_WALLET_ID,
     ROOT_SECONDARY_WALLET_ID,
 } = require("./constants");
+require("dotenv").config()
 
 exports.main = async (args) => {
     // const endpoint = "https://smartmark.hasura.app/v1/graphql";
-    const endpoint = "https://hasura.smartcardnp.vn/v1/graphql";
+    const endpoint = process.env.HASURA_ENDPOINT;
     const graphQLClient = new GraphQLClient(endpoint, {
         headers: {
             "content-type": "application/json",
