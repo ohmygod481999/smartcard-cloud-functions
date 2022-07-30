@@ -16,3 +16,5 @@ packages:
     actions:
       - name: insert_identity_hasura
         runtime: 'nodejs:default'
+      - name: graphql
+        runtime: 'nodejs:default'
