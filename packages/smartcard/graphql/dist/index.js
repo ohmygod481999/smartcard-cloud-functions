@@ -4,6 +4,7 @@ exports.main = void 0;
 const ApolloServer_1 = require("./ApolloServer");
 const apollo_server_core_1 = require("apollo-server-core");
 const ory_api_1 = require("./ory-api");
+const config_1 = require("./config");
 // Construct a schema, using GraphQL schema language
 const typeDefs = (0, apollo_server_core_1.gql) `
     type Address {
@@ -45,6 +46,7 @@ const resolvers = {
             // console.log(args1, args2, args3);
             const userId = args.ory_id;
             console.log(userId);
+            console.log(config_1.ORY_URL);
             const userInfo = await (0, ory_api_1.getUserInfoOry)(userId);
             userInfo.credentials = JSON.stringify(userInfo.credentials);
             userInfo.traits = JSON.stringify(userInfo.traits);
